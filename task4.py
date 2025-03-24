@@ -15,7 +15,7 @@ contacts = {}
 @input_error
 def add_contact(args):
     if len(args) < 2:
-        raise ValueError  # Викличе обробку помилки в декораторі
+        raise ValueError
     name, phone = args[0], args[1]
     contacts[name] = phone
     return "Contact added."
